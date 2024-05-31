@@ -1,0 +1,13 @@
+{
+  "name": "loo-fi",
+  "version": "1.2.0",
+  "description": "",
+ "scripts": {
+    "start": "netlify dev"
+  },
+  "dependencies": {
+    "faunadb": "^4.3.1"
+  },
+  "author": "MADE",
+  "license": "ISC"
+}

@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loo-Fi - Self affirmation Words With Chill Beats.</title>
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+ 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Loo-Fi offers self-affirmation words set to chill beats, perfect for relaxation and positivity.">
+    <meta name="keywords" content="Loo-Fi, self-affirmation, chill beats, relaxation, positivity, mental wellness, lo-fi music">
+    <meta name="author" content="Loo-Fi Team">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="Loo-Fi - Self affirmation Words With Chill Beats">
+    <meta property="og:description" content="Self love everyday, lo-fi beats and positive experience.">
+    <meta property="og:image" content="favicon.ico">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Loo-Fi - Self affirmation Words With Chill Beats">
+    <meta name="twitter:description" content="Experience the perfect blend of self-affirmation and chill beats with Loo-Fi.">
+    <meta name="twitter:image" content="favicon.ico">
+    <meta name="twitter:site" content="@MyLoo_Fi">
+     
+   <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QMRVN56J1D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QMRVN56J1D');
+</script>
+
+   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-line-icons/css/simple-line-icons.css">
+    <style>
+        html{
+              background-color: #d4f6f5;
+              display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Inter', Arial, sans-serif;
+            max-width: 400px;
+            flex-direction: column;
+            margin: 10px;
+            margin-top: 80px;
+        }
+        .logo {
+           opacity: 0.6;margin-bottom: 20px;
+        }
+        .container {
+            text-align: center;
+            background-color: #F3FFFD;
+            padding: 20px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            max-width: 68%;
+            box-shadow:
+                1.5px 1.2px 2.2px rgba(0, 0, 0, 0.011),
+                3.7px 2.9px 5.3px rgba(0, 0, 0, 0.016),
+                6.9px 5.5px 10px rgba(0, 0, 0, 0.02),
+                12.3px 9.8px 17.9px rgba(0, 0, 0, 0.024),
+                23px 18.4px 33.4px rgba(0, 0, 0, 0.029),
+                55px 44px 80px rgba(0, 0, 0, 0.04);
+        }
+        .title {
+            color: #d7d7d7;
+            letter-spacing: -1px;
+            font-size: 0.9em;
+        }
+        .tagline {
+            font-size: 1.2em;
+            color: #d7d7d7;
+            margin-bottom: 10px;
+        }
+        .footer{ width: 80%;
+        opacity: 0.6;
+        margin-top: 30px;
+        padding-bottom: 60px;
+        margin: auto;
+        text-align: center;
+        z-index: -999;
+        padding-top: 130px;
+        }
+        .footer p{
+            font-size: 0.9em;
+            color: #748b97;
+        }
+        .footer a{color: inherit;
+        text-decoration: none;
+            font-size: 0.8em;
+        }
+        #affirmation {
+            font-size: 2.4em;
+            font-weight: 900;
+            letter-spacing: -2px;
+            margin: auto;
+            color: #101720;
+            line-height: 1.1em;
+            opacity: 1;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .affirmationbox {
+            min-height: 250px;
+            margin-top: 5%;
+            word-wrap: break-word;
+            margin-bottom: 5px;
+        }
+        .getaffirmation {
+            padding: 12px 2em;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 15px;
+            background-color: #101720;
+            color: #F3FFFD;
+            cursor: pointer;
+            margin: 5px;
+            transition: 0s .2s;
+        }
+        .getaffirmation:active{
+ padding: 13px 2.11em;
+font-size: 1.11em;
+margin: 4.2px;
+ }
+        #shareButton {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin: 20px;
+            border-radius: 15px;
+            position: fixed;
+            box-shadow:
+                1.5px 1.2px 2.2px rgba(0, 0, 0, 0.011),
+                3.7px 2.9px 5.3px rgba(0, 0, 0, 0.016),
+                6.9px 5.5px 10px rgba(0, 0, 0, 0.02),
+                12.3px 9.8px 17.9px rgba(0, 0, 0, 0.024),
+                23px 18.4px 33.4px rgba(0, 0, 0, 0.029),
+                55px 44px 80px rgba(0, 0, 0, 0.04);
+        }
+        button {
+            padding: 12px 1.2em;
+            font-size: 1.1em;
+            border: none;
+            background-color: #101720;
+            color: #F3FFFD;
+            cursor: pointer;
+            margin-right: -3px;
+            transition: 0s .2s;
+        }
+        button:active{
+  
+   transition: .0s;
+    font-size: 1.161em;
+ }
+        .player-controls {
+            float: left;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            margin: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            position:fixed;
+            box-shadow:
+                1.5px 1.2px 2.2px rgba(0, 0, 0, 0.011),
+                3.7px 2.9px 5.3px rgba(0, 0, 0, 0.016),
+                6.9px 5.5px 10px rgba(0, 0, 0, 0.02),
+                12.3px 9.8px 17.9px rgba(0, 0, 0, 0.024),
+                23px 18.4px 33.4px rgba(0, 0, 0, 0.029),
+                55px 44px 80px rgba(0, 0, 0, 0.04);
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+            color: #F3FFFD;
+        }
+        .share-buttons {
+            display: none;
+            position: fixed;
+            right: 0;
+            bottom: 80px;
+            margin-right: 23px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow:
+                1.5px 1.2px 2.2px rgba(0, 0, 0, 0.011),
+                3.7px 2.9px 5.3px rgba(0, 0, 0, 0.016),
+                6.9px 5.5px 10px rgba(0, 0, 0, 0.02),
+                12.3px 9.8px 17.9px rgba(0, 0, 0, 0.024),
+                23px 18.4px 33.4px rgba(0, 0, 0, 0.029),
+                55px 44px 80px rgba(0, 0, 0, 0.04);
+        }
+        .share-buttons button {
+            display: block;
+            min-height: 52px;
+            padding: auto;
+            font-size: 1.2em;
+            background: #F7D3D7;
+            color: #101720;
+            width: 100%;
+        }
+        .share-buttons button:first-child{
+        margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <img class="logo" src="logo.webp" alt="Logo" width="80" height="auto"></div>
+
+     <div class="container">
+        <span class="title">Self Affirmation.</span>
+        <div class="affirmationbox">
+            <h1 id="affirmation">...</h1>
+        </div>
+        <button class="getaffirmation" onclick="displayRandomAffirmation()">
+            <i class="icon-reload"></i> Get Affirmation
+        </button>
+    </div>
+
+    <div class="player-controls">
+        <button id="playPauseButton" onclick="togglePlayPause()">
+            <i class="icon-control-play"></i>
+        </button>
+        <button onclick="nextMusic()">
+            <i class="icon-control-forward"></i>
+        </button>
+    </div>
+    
+<button id="likeButton">Like</button>
+<span id="likeCount">0</span>
+
+<script>
+  document.getElementById('likeButton').addEventListener('click', async () => {
+    const quote = document.getElementById('affirmation').innerText;
+
+    const response = await fetch('/.netlify/functions/like-quote', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ quote: quote }),
+    });
+
+    const result = await response.json();
+    document.getElementById('likeCount').innerText = result.data.likes;
+  });
+</script>
+
+    <button id="shareButton" onclick="toggleShareButtons()">
+        <i class="icon-action-redo"></i>
+       </button>
+    <div class="share-buttons" id="shareButtons">
+        <button onclick="shareToWhatsApp()">
+ <svg fill="none" height="22" viewBox="0 0 24 24" width="19" xmlns="http://www.w3.org/2000/svg"><g stroke="#101720" stroke-width="1.3"><path d="m12 22c5.5228 0 10-4.4772 10-10 0-5.52285-4.4772-10-10-10-5.52285 0-10 4.47715-10 10 0 1.3789.27907 2.6926.78382 3.8877.27896.6604.41844.9907.43571 1.2403s-.05619.5241-.20311 1.0732l-1.01642 3.7988 3.79877-1.0164c.54911-.1469.82367-.2204 1.07325-.2031.24959.0172.57983.1567 1.24033.4357 1.1951.5047 2.50875.7838 3.88765.7838z" stroke-linejoin="round"/><path d="m8.58815 12.3773.87094-1.0817c.36707-.4559.82081-.8803.85641-1.48734.0089-.15332-.0989-.84169-.3147-2.2184-.08479-.54105-.58994-.58986-1.02748-.58986-.57018 0-.85527 0-1.13837.12931-.35781.16344-.72516.623-.80578 1.00802-.06378.30463-.01638.51454.07842.93436.40264 1.78311 1.34722 3.54411 2.81189 5.00881 1.46472 1.4647 3.22572 2.4093 5.00882 2.8119.4198.0948.6297.1422.9344.0784.385-.0806.8445-.4479 1.008-.8058.1293-.2831.1293-.5681.1293-1.1383 0-.4376-.0488-.9427-.5899-1.0275-1.3767-.2158-2.065-.3236-2.2184-.3147-.607.0356-1.0314.4893-1.4873.8564l-1.0817.8709"/></g></svg>
+    </button>
+        <button onclick="shareToTwitter()">
+            <i class="icon-social-twitter"></i>
+        </button>
+    </div>
+ <div class="footer">
+        <p>
+            Practicing self love everyday helps increase self esteem and healthy living.
+            <br><br><b>built with <i class="icon-heart"></i> by <a href="https://meetmatthew.framer.website">MADE</a></b>
+        </p>
+    </div>
+    
+     <script>
+        document.getElementById('likeButton').addEventListener('click', async () => {
+            const quote = document.getElementById('affirmation').innerText;
+
+            try {
+                const response = await fetch('/.netlify/functions/like-quote', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ quote: quote }),
+                });
+
+                const result = await response.json();
+                document.getElementById('likeCount').innerText = result.data.likes;
+            } catch (error) {
+                console.error('Error liking quote:', error);
+            }
+        });
+    </script>
+    <script>
+    const affirmations = [
+    "Rule number 1, do not panic.",
+    "I am confident and capable.",
+    "I am in control of my own happiness.",
+    "I am worthy of love and respect.",
+    "I believe in myself and my abilities.",
+    "I am growing and improving every day.",
+    "I am surrounded by positive energy.",
+    "I am grateful for all that I have.",
+    "I am at peace with who I am.",
+    "I trust myself and my intuition.",
+    "I am proud of my accomplishments.",
+    "I embrace change and welcome new experiences.",
+    "I am becoming a better version of myself every day.",
+    "I am worthy of achieving my goals.",
+    "I choose to be happy right now. I love my life.",
+    "I am a magnet for positive energy.",
+    "I am in charge of my life.",
+    "I am confident in my abilities and express my true self with ease.",
+    "I am brave, bold, and beautiful.",
+    "I am grateful for the opportunities that come my way.",
+    "I trust the process of life.",
+    "I am loved, loving, and lovable.",
+    "I am a positive thinker and only attract positivity into my life.",
+    "I am a unique and special person.",
+    "I am free to create the life I desire.",
+    "I attract success and prosperity with all my ideas.",
+    "I am the architect of my life; I build its foundation and choose its contents.",
+    "I am grateful for my healthy body, mind, and soul.",
+    "I am becoming more at ease with myself every day.",
+    "I am full of vitality and my mind is calm and peaceful.",
+    "I am a powerful creator. I create the life I want.",
+    "I am blessed with an incredible family and wonderful friends.",
+    "I am grateful for this moment and find joy in it.",
+    "I am resilient, strong, and brave.",
+    "I am the author of my story and I can make it a bestseller.",
+    "I am in control of my thoughts, feelings, and actions.",
+    "I am capable of achieving greatness.",
+    "I am open to new adventures in my life.",
+    "I am patient, diplomatic, and tolerant.",
+    "I am filled with focus and concentration.",
+    "I am a loving, kind, and patient person.",
+    "I am the creator of my best reality.",
+    "I am worthy of all the compliments I receive.",
+    "I am a money magnet, and prosperity is drawn to me.",
+    "I am a powerful manifester.",
+    "I am a vessel of peace and calm.",
+    "I am a beacon of love and compassion.",
+    "I am a unique and special individual with limitless potential.",
+    "I am grateful for my body, my mind, and my spirit.",
+    "I am becoming more knowledgeable and wiser every day.",
+    "I am at peace with my past, present, and future.",
+    "I am capable of overcoming any challenges I face.",
+    "I am deserving of all the wonderful things life has to offer.",
+    "I am surrounded by love and everything is fine.",
+    "I am in the process of becoming the best version of myself.",
+    "I am a strong, independent person.",
+    "I am grateful for the abundance that I have and the abundance on its way.",
+    "I am thankful for today.",
+    "I am proud of the person I am becoming.",
+    "I am in tune with the universe.",
+    "I am an unstoppable force of nature.",
+    "I am a radiant being filled with light and love.",
+    "I am aligned with the energy of abundance.",
+    "I am the universe, and the universe is within me.",
+    "I am grateful for the lessons life has taught me.",
+    "I am at home in my body and at peace in my mind.",
+    "I am a magnet for miracles.",
+    "I am thankful for each and every person who has touched my life.",
+    "I am love, I am peace, I am joy.",
+    "I am the master of my fate.",
+    "I am the captain of my soul.",
+    "I am my own biggest supporter.",
+    "I am open to receiving love in various forms.",
+    "I am grateful for another day to make a positive contribution.",
+    "I am a force for good in the world.",
+    "I am a positive and valuable contributor to my community.",
+    "I am open to receiving new opportunities.",
+    "I am a creative thinker.",
+    "I am always learning and growing.",
+    "I am grateful for the beauty that surrounds me.",
+    "I am deserving of happiness and joy.",
+    "I am filled with positive thoughts and actions.",
+    "I am a positive influence on others.",
+    "I am focused on my goals and motivated to achieve them.",
+    "I am in control of my thoughts and emotions.",
+    "I am a source of inspiration for others.",
+    "I am grateful for my unique talents and abilities.",
+    "I am worthy of all the best things in life.",
+    "I am a positive and valuable person.",
+    "I am capable of achieving greatness.",
+    "I am a source of happiness for others.",
+    "I am a positive and uplifting person.",
+    "I am filled with positive energy and thoughts.",
+    "I am a source of strength and courage.",
+    "I am proud of who I am becoming.",
+    "Love yourself, flaws and all.",
+    "You are enough.",
+    "Self-love is the best love.",
+    "Embrace your uniqueness.",
+    "You deserve kindness, start with yourself.",
+    "Take care of your mind, body, and soul.",
+    "Your worth is not defined by others.",
+    "Your imperfections make you beautiful.",
+    "Happiness starts with self-love.",
+    "You are stronger than you think.",
+    "Love yourself first.",
+    "You are beautiful inside and out.",
+    "Be kind to yourself.",
+    "Your thoughts are powerful, use them wisely.",
+    "Self-care is not selfish.",
+    "You are doing the best you can, and that's enough.",
+    "Forgive yourself and move forward.",
+    "You are a work of art in progress.",
+    "Embrace your quirks and flaws.",
+    "Your mental health matters.",
+    "Take time for self-reflection.",
+    "Your voice matters, use it.",
+    "Self-love is a choice, choose wisely.",
+    "You are more than your mistakes.",
+    "Self-care is essential, not optional.",
+    "Your mental health is just as important as your physical health.",
+    "You are not alone in your struggles.",
+    "Embrace your emotions, they make you human.",
+    "Your worth is not defined by your relationships.",
+    "Your body is yours, love and respect it.",
+    "Your voice matters, use it to speak up.",
+    "Self-care is not a luxury, it's a necessity.",
+    "Your past does not define your future.",
+    "Embrace your uniqueness, it's your strength.",
+    "Self-love is the key to confidence.",
+    "Embrace your creativity, it's a part of you.",
+    "You are worthy of forgiveness, including self-forgiveness.",
+    "Your thoughts are powerful, use them to create a positive reality.",
+    "Your worth is not defined by your appearance.",
+"Forgive yourself, heal, and move forward.",
+"Self-love is not selfish, it's necessary.",
+"You are capable of growth and change.",
+"Embrace your authenticity, it's your power.",
+"Self-love is the key to happiness.",
+"Your worth is not defined by your job.",
+"You are worthy of love, care, and compassion – from yourself.",
+   "You have the power to shape your reality with your thoughts.",
+    "Your true worth transcends physical appearance.",
+    "Grant yourself forgiveness, embrace healing, and journey forward.",
+    "Prioritizing self-love isn't selfish; it's essential for well-being.",
+    "Embrace the endless potential for growth and transformation within you.",
+    "Authenticity is your greatest asset; embrace it and wield its power.",
+    "Cultivating self-love unlocks the door to lasting happiness.",
+    "Your value extends far beyond the confines of your job title.",
+    "You deserve an abundance of love, care, and compassion, starting from within.",
+    "You are capable of overcoming any challenge that comes your way.",
+    "Embrace the journey of self-discovery and personal growth.",
+    "Your inner strength and resilience are boundless.",
+    "Believe in yourself and your ability to achieve greatness.",
+    "Every obstacle you face is an opportunity for growth and learning.",
+    "Trust in the process of life and the journey you're on.",
+    "You are worthy of success, happiness, and fulfillment.",
+    "Allow yourself to let go of what no longer serves you.",
+    "Embrace the beauty of imperfection and the lessons it brings.",
+    "Your unique perspective and voice matter in this world.",
+    "Practice gratitude daily and watch abundance flow into your life.",
+    "Every setback is a setup for a greater comeback.",
+    "Your dreams are within reach; keep striving towards them.",
+    "Radiate positivity and watch it reflect back to you.",
+    "Nurture your mind, body, and spirit with love and care.",
+    "You are deserving of love and affection in all its forms.",
+    "Choose kindness and compassion in every interaction.",
+    "Celebrate your progress, no matter how small it may seem.",
+    "Release the need for perfection and embrace authenticity.",
+    "Your presence alone is a gift to the world around you.",
+    "Find joy in the journey, not just the destination.",
+    "Every experience, whether good or bad, is a lesson to cherish.",
+    "Your potential is limitless; believe in yourself.",
+    "You are a magnet for positive energy and abundance.",
+    "Trust in your intuition; it knows the way.",
+    "Focus on the present moment and find peace within it.",
+    "You have the power to create the life of your dreams.",
+    "Your past does not define your future; you hold the pen.",
+    "Embrace uncertainty as an opportunity for growth and adventure.",
+    "You are enough, just as you are, in this moment.",
+    "Let go of comparison and embrace your unique journey.",
+    "Your worth is inherent and unaffected by external circumstances.",
+    "Surround yourself with those who uplift and inspire you.",
+    "Believe in the power of your dreams and watch them manifest.",
+    "You are a beacon of light in a world that sometimes feels dark.",
+    "Remember to breathe deeply and trust in the flow of life.",
+    "You are worthy of all the good things that life has to offer.",
+    "Embrace each day with a positive mindset and an open heart.",
+    "Your potential for growth is limitless and ever-expanding.",
+    "Believe in the power of your dreams and your ability to achieve them.",
+    "You are a unique individual with a special purpose in this world.",
+    "Every day is a new opportunity to start fresh and be your best self.",
+    "Your strength and resilience will carry you through any challenge.",
+    "Embrace the journey of self-discovery with curiosity and love.",
+    "You are deserving of happiness, love, and success.",
+    "Trust that everything is unfolding for your highest good.",
+    "You have the power to create positive change in your life.",
+    "Radiate kindness and compassion, and it will return to you tenfold.",
+    "Your inner light shines brightly, illuminating your path.",
+    "You are a powerful creator of your own reality.",
+    "Every step you take is a step towards your goals and dreams.",
+    "You are surrounded by love and support, even in difficult times.",
+    "Practice self-care and prioritize your well-being daily.",
+    "Your thoughts and actions have the power to shape your future.",
+    "Believe in your abilities and trust in your journey.",
+    "Embrace your individuality and celebrate what makes you unique.",
+    "You are constantly growing, evolving, and becoming your best self.",
+    "Each challenge you face is an opportunity for growth and learning.",
+    "Your positivity and optimism attract good things into your life.",
+    "You are worthy of respect, love, and kindness.",
+    "Every day is a chance to improve and move closer to your goals.",
+    "You have the strength and courage to overcome any obstacle.",
+    "Your journey is unique, and you are exactly where you need to be.",
+    "Trust in your intuition and listen to your inner guidance.",
+    "You are capable of achieving anything you set your mind to.",
+    "Embrace change as a natural part of life and personal growth.",
+    "You are a valuable and important person in this world.",
+    "Every moment is an opportunity to create a better future.",
+    "You are deserving of peace, love, and joy in your life.",
+    "Your inner beauty and strength shine through in all you do.",
+    "Believe in your dreams and take action to make them a reality.",
+    "You are surrounded by positive energy and supportive people.",
+    "Your life is a beautiful and unique journey of growth.",
+    "You have the power to create a life filled with love and happiness.",
+    "Trust that the universe is guiding you towards your highest good.",
+    "Embrace your creativity and let it flow freely.",
+    "You are deserving of success and all the wonderful things life offers.",
+    "Your positive attitude brings about positive outcomes.",
+    "You are in control of your thoughts, feelings, and actions.",
+    "Every day, you are becoming more aligned with your true self.",
+    "You have the ability to overcome any challenge with grace and ease.",
+    "Your heart is open to giving and receiving love freely.",
+    "You are a source of inspiration and positivity to those around you.",
+    "Believe in yourself and all that you are capable of achieving.",
+    "You are at peace with yourself and the world around you.",
+    "Your journey is filled with endless possibilities and opportunities.",
+    "You are a beacon of light and positivity.",
+    "Your dreams are within reach; believe in them.",
+    "You have the power to turn challenges into opportunities.",
+    "Your heart is full of love, and you share it freely.",
+    "You are capable of achieving amazing things.",
+    "Trust yourself and your ability to make the right decisions.",
+    "You are worthy of all the success and happiness in the world.",
+    "Your kindness and compassion make a difference in the world.",
+    "You are constantly learning and growing from every experience.",
+    "You have the strength to overcome any adversity.",
+    "Your inner peace radiates outward and calms those around you.",
+    "You are deserving of all the wonderful things life has to offer.",
+    "Your creativity knows no bounds; express it freely.",
+    "You are loved more than you know.",
+    "Your positive energy attracts good things into your life.",
+    "You are a resilient and strong individual.",
+    "Believe in your power to create the life you desire.",
+    "You are an amazing person with a lot to offer.",
+    "Every day is a new opportunity to be your best self.",
+    "Your life is filled with abundance and joy.",
+    "You are surrounded by supportive and loving people.",
+    "Your optimism and positivity are contagious.",
+    "You are worthy of respect and admiration.",
+    "Your mind is clear, focused, and full of brilliant ideas.",
+    "You are a source of inspiration to those around you.",
+    "You are capable of achieving greatness.",
+    "Your confidence grows with every step you take.",
+    "You are deserving of love, happiness, and success.",
+    "Your life is a beautiful journey of growth and discovery.",
+    "You have the power to make positive changes in your life.",
+    "You are in control of your destiny.",
+    "Your presence makes the world a better place.",
+    "You are enough, just as you are.",
+    "Your heart is open to love and joy.",
+    "You are a unique and valuable individual.",
+    "Your future is bright and filled with endless possibilities.",
+    "You are grateful for all the blessings in your life.",
+    "Your inner strength is unshakable.",
+    "You are worthy of achieving your dreams.",
+    "Your life is a reflection of your positive thoughts.",
+    "You have the courage to follow your heart.",
+    "You are deserving of all the happiness in the world.",
+    "Your mind is open to new and exciting opportunities.",
+    "You are proud of who you are becoming.",
+    "Your journey is unique and beautiful.",
+    "You are a powerful creator of your own reality.",
+    "You are surrounded by love and positive energy.",
+    "Your life is filled with abundance and prosperity.",
+    "You are worthy of all the wonderful things life has to offer.",
+    "Your positive attitude attracts good things into your life.",
+    "You are constantly growing and evolving into your best self.",
+    "You have the power to achieve your goals and dreams.",
+    "Your heart is full of love and compassion.",
+    "You are a beacon of hope and positivity.",
+    "Your life is a testament to your strength and resilience.",
+    "You are deserving of all the success and happiness in the world.",
+    "Your inner peace radiates outward and touches those around you.",
+    "You are a unique and special person with a lot to offer.",
+    "Your positivity and optimism make the world a better place.",
+    "You are capable of achieving amazing things.",
+    "Your life is filled with love, joy, and abundance.",
+    "You are worthy of respect, love, and admiration.",
+    "Your creativity knows no bounds.",
+    "You are a source of inspiration to those around you.",
+    "Your future is bright and full of endless possibilities.",
+    "You are grateful for every moment of your journey.",
+    "Your mind is clear, focused, and full of brilliant ideas.",
+    "You're confined only by the walls you build yourself.",
+  ]; 
+
+        const sounds = [
+            "sounds/sound1.wav",
+            "sounds/sound2.wav",
+            "sounds/sound3.wav",
+            "sounds/sound4.wav",
+            "sounds/sound5.wav",
+            "sounds/sound6.wav",
+            "sounds/sound7.wav",
+            "sounds/sound8.wav",
+            "sounds/sound9.wav",
+            "sounds/sound10.wav"
+        ];
+
+        let currentSoundIndex = 0;
+        const audio = new Audio();
+        audio.loop = true;
+        audio.volume = 0.70; // Set volume to 70%
+        let isPlaying = false;
+
+        function togglePlayPause() {
+            const playPauseButton = document.getElementById('playPauseButton');
+            const icon = playPauseButton.querySelector('i');
+            if (isPlaying) {
+                audio.pause();
+                icon.classList.remove('icon-control-pause');
+                icon.classList.add('icon-control-play');
+            } else {
+                if (audio.src === "") {
+                    shuffleSounds();
+                }
+                audio.play();
+                icon.classList.remove('icon-control-play');
+                icon.classList.add('icon-control-pause');
+            }
+            isPlaying = !isPlaying;
+        }
+
+        function nextMusic() {
+            currentSoundIndex = (currentSoundIndex + 1) % sounds.length;
+            audio.src = sounds[currentSoundIndex];
+            audio.play();
+            const playPauseButton = document.getElementById('playPauseButton');
+            const icon = playPauseButton.querySelector('i');
+            icon.classList.remove('icon-control-play');
+            icon.classList.add('icon-control-pause');
+            isPlaying = true;
+        }
+
+        function shuffleSounds() {
+            currentSoundIndex = Math.floor(Math.random() * sounds.length);
+            audio.src = sounds[currentSoundIndex];
+        }
+
+        function displayAffirmationByMinute() {
+            const now = new Date();
+            const minute = now.getMinutes();
+            const affirmation = affirmations[minute % affirmations.length];
+            updateAffirmation(affirmation);
+        }
+
+        function displayRandomAffirmation() {
+            const randomIndex = Math.floor(Math.random() * affirmations.length);
+            const affirmation = affirmations[randomIndex];
+            updateAffirmation(affirmation);
+        }
+
+        function updateAffirmation(affirmation) {
+            const affirmationElement = document.getElementById('affirmation');
+            affirmationElement.style.opacity = 0; // Start fade out
+            setTimeout(() => {
+                affirmationElement.innerText = affirmation;
+                affirmationElement.style.opacity = 1; // Start fade in
+            }, 500); // Duration of fade out transition
+        }
+
+        function toggleShareButtons() {
+            const shareButtons = document.getElementById('shareButtons');
+            if (shareButtons.style.display === "none" || shareButtons.style.display === "") {
+                shareButtons.style.display = "block";
+            } else {
+                shareButtons.style.display = "none";
+            }
+        }
+
+        function shareToWhatsApp() {
+            const affirmation = document.getElementById('affirmation').innerText;
+            const whatsappUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(affirmation)}%20%23selflove%20https://loo-fi.netlify.app`;
+            window.open(whatsappUrl, '_blank');
+        }
+
+        function shareToTwitter() {
+            const affirmation = document.getElementById('affirmation').innerText;
+            const twitterUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(affirmation)}%20%23selflove%20https://loo-fi.netlify.app`;
+            window.open(twitterUrl, '_blank');
+        }
+
+        // Display the affirmation based on the current minute when the page loads and update it every minute
+        window.onload = () => {
+            displayAffirmationByMinute();
+            setInterval(displayAffirmationByMinute, 60000); // Update every minute
+            shuffleSounds(); // Start playing a shuffled sound on page load
+        };
+    </script>
+    
+   
+</body>
+</html>
